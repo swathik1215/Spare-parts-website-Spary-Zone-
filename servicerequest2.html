@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="spare.css">
+</head>
+<body class="sqb">
+    <div class="formcont">
+        <form action="">
+            <div>
+                <label>Car Brand:</label>
+                <input type="text" placeholder="Enter Your car brand" required class="srf"/>
+            </div>
+            <div>
+                <label>car model:</label>
+                <input type="text" placeholder="Enter Your car model" required class="srf"/>
+            </div>
+            <div>
+                <label>Make Year:</label>
+                <input type="number" required class="srf"/>
+            </div>
+            <div>
+                <label>Problem:</label>
+                <textarea placeholder="Enter Your Problem" maxlength="100" required class="srf"></textarea>
+            </div>
+            <div>
+                <label>Service Date:</label>
+                <input type="date" required  class="srf"/>
+            </div>
+            <div>
+                <button type="submit" onclick="sendreq()" id="srbtn" class="efbtn">Send Request</button>
+            </div>
+        </form>
+    </div>
+    <script src="spare.js"></script>
+</body>
+</html>
