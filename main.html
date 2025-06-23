@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spary Zone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="spare.css">
+  <style>
+    .custom-modal {
+      background: linear-gradient(145deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+      border-radius: 16px;
+      padding: 25px;
+      color: #f1f5f9;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(16px);
+      animation: dropIn 0.4s ease;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    @keyframes dropIn {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .modal-header {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .modal-title {
+      color: #facc15;
+      font-weight: 600;
+    }
+    .btn-close {
+      filter: brightness(300%);
+      transition: transform 0.3s ease;
+    }
+    .btn-close:hover {
+      transform: scale(1.2) rotate(90deg);
+      filter: brightness(400%);
+    }
+    .form-control-custom {
+      background-color: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      color: #f1f5f9;
+      padding: 12px 15px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+    }
+    .form-control-custom::placeholder {
+      color: #94a3b8;
+    }
+    .form-control-custom:focus {
+      border-color: #4acdde;
+      background-color: #0f172a;
+      box-shadow: 0 0 0 0.25rem rgba(15, 225, 229, 0.4);
+    }
+    .btn-auth {
+      width: 100%;
+      padding: 12px;
+      font-weight: 600;
+      border-radius: 10px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      background: linear-gradient(to right, #4acdde, #22b6c5);
+      color: #0f172a;
+      border: none;
+    }
+    .btn-auth:hover {
+      background: #facc15;
+      color: #1e293b;
+    }
+    .input-group-text {
+      background-color: #1e293b;
+      border: none;
+      color: #94a3b8;
+    }
+</style>
+
+</head>
+<body>
+  <nav>
+    <div><a href="#">Spary Zone</a></div>
+    <div>
+      <a href="#">Home</a>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#signinModal">Login</a>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+      <a href="servicerequest.html">Service</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <h1>Biggest Spare Parts Buying Hub</h1>
+    <p>Explore a wide range of high-quality car & bike spare parts and professional service at your fingertips.</p>
+    <button onclick="window.location.href='homepage.html'">Get Started</button>
+  </section>
+  <section class="grid">
+    <div class="card">
+      <img src="carosal3.jpg" alt="Mechanical Service" />
+      <h3>Mechanical Service</h3>
+      <p>High-quality brake pads compatible with multiple car models. Durable and safe.</p>
+    </div>
+    <div class="card">
+      <img src="carosal2.jpg" alt="Car Spare Parts" />
+      <h3>Car Spare Parts</h3>
+      <p>Premium car parts for performance and longevity. Easy returns and guaranteed quality.</p>
+    </div>
+    <div class="card">
+      <img src="carosal1.jpg" alt="Bike Spare Parts" />
+      <h3>Bike Spare Parts</h3>
+      <p>Top-grade filters, brakes, chains, and more. Built for all major bike brands.</p>
+    </div>
+  </section>
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-warning" id="signinLabel">Sign In</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group mb-3">
+            <label for="signinEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control form-control-custom" id="signinEmail" placeholder="Enter your email id">
+          </div>
+          <div class="form-group mb-4">
+            <label for="signinPassword" class="form-label">Password</label>
+            <input type="password" class="form-control form-control-custom" id="signinPassword" placeholder="Enter password">
+          </div>
+          <button type="submit" class="btn btn-auth w-100">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title signup-title" id="signupLabel">Sign Up</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group mb-3">
+            <label for="signupName" class="form-label">Full Name</label>
+            <input type="text" class="form-control form-control-custom" id="signupName" placeholder="Your name">
+          </div>
+          <div class="form-group mb-3">
+            <label for="signupEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control form-control-custom" id="signupEmail" placeholder="name@example.com">
+          </div>
+          <div class="form-group mb-4">
+            <label for="signupPassword" class="form-label">Password</label>
+            <input type="password" class="form-control form-control-custom" id="signupPassword" placeholder="Create password">
+          </div>
+          <button type="submit" class="btn btn-auth">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -6,39 +6,60 @@
   <title>Service Request</title>
   <link rel="stylesheet" href="spare.css">
 </head>
-<body class="sqb">
+<body>
+  <div class="innav">
+        <a href="homepage.html">Spary Zone</a>
+        <a href="servicerequest.html">Service Request</a>
+        <a href="car.html">Car Spare</a>
+        <a href="bike.html">Bike Spare</a>
+    </div>
   <div class="formcont">
     <h1>Service Request</h1>
-    <form action="">
+    <form onsubmit="sendnext(event)">
       <div>
         <label>Name:</label>
-        <input type="text" placeholder="Enter Your Name" required class="srf" />
+        <input type="text" placeholder="Enter Your Name" id="na" class="srf" />
       </div>
       <div>
         <label>Email:</label>
-        <input type="email" placeholder="Enter Your Email" required class="srf" />
+        <input type="email" placeholder="Enter Your Email" id="em" class="srf" />
       </div>
       <div>
         <label>Phone Number:</label>
-        <input type="number" placeholder="Enter Your Phone Number" required class="srf"/>
+        <input type="number" placeholder="Enter Your Phone Number" id="ph" class="srf"/>
       </div>
       <div>
         <label>State:</label>
-        <input type="text" placeholder="Enter Your State" required class="srf"/>
+        <input type="text" placeholder="Enter Your State" id="st" class="srf"/>
       </div>
       <div>
         <label>District:</label>
-        <input type="text" placeholder="Enter Your District" required class="srf"/>
+        <input type="text" placeholder="Enter Your District" id="dis" class="srf"/>
       </div>
       <div>
         <label>Address:</label>
-        <textarea placeholder="Enter Your Address" maxlength="100" required class="srf"></textarea>
+        <textarea placeholder="Enter Your Address" maxlength="100" id="add" class="srf"></textarea>
       </div>
       <div>
-        <button type="button" onclick="sendnext()" id="srbtn">Save and Next</button>
+        <button type="submit" id="srbtn">Save and Next</button>
       </div>
     </form>
   </div>
-  <script src="spare.js"></script>
+  <script>
+    function sendnext(event){
+      event.preventDefault();
+      let name = document.getElementById("na").value;
+      let email = document.getElementById("em").value;
+      let phno = document.getElementById("ph").value;
+      let state = document.getElementById("st").value;
+      let dist = document.getElementById("dis").value;
+      let address = document.getElementById("add").value;
+      if(name=="" || email=="" || phno=="" || state=="" || dist=="" || address==""){
+        alert("Kindly fill Details");
+      }else{
+        window.location.href = 'servicerequest2.html';
+      }
+    }
+  </script>
 </body>
 </html>

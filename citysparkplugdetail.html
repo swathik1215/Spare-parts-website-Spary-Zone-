@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>City Spark Plug</title>
+  <link rel="stylesheet" href="spare.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="pinnav">
+    <a href="homepage.html">Spary Zone</a>
+    <a href="servicerequest.html">Service Request</a>
+    <a href="car.html">Car Spare</a>
+    <a href="bike.html">Bike Spare</a>
+    <a href="cart.html" class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-badge" id="cartCount">0</span>
+    </a>
+  </div>
+  <div class="prodcont">
+    <div>
+      <img src="cityproduct_spark plug.webp" alt="spark plug" class="prodimg">
+    </div>
+    <div class="prodalign">
+      <h2 style="color: #22D3EE;">NGK Iridium Spark Plug (Set of 4) BKR6EIX-11</h2>
+      <p>Fits Honda City (Type 3 & 4), Brio, Amaze (N/M), WR-V, Jazz (N/M)</p>
+      <p>Free Shipping || 2-Day Delivery || Limited Offer</p>
+      <div>
+        <input type="search" placeholder="Enter Pincode" class="pin">
+        <button onclick="findplace()" id="findbtn">Find</button>
+      </div>
+      <br>
+      <h1 style="color: #EAB308;">Rs. 3,203</h1>
+      <div class="purchase-section">
+      <label for="quantity" style="color: #f9f9f9;">Quantity:</label>
+      <input type="number" id="quantity" value="1" min="1" max="10">
+      <div class="button-group">
+        <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+        <button class="btn btn-success" onclick="buyNow()">Buy Now</button>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="specification-container">
+    <h4>Suitable Car Model:</h4>
+    <table class="spec-table">
+      <tr><td>Weight</td><td>0.4 kg</td></tr>
+      <tr><td>Dimensions</td><td>16 x 10 x 10 cm</td></tr>
+      <tr><td>Car Make</td><td>Honda</td></tr>
+      <tr><td>Car Model</td><td>Amaze, Brio, City, WR-V</td></tr>
+      <tr><td>Car Sub Model</td><td>1.5L Engine, 1.3L Engine</td></tr>
+      <tr><td>Parts Brand</td><td>NGK</td></tr>
+      <tr><td>Parts Origin</td><td>Aftermarket</td></tr>
+      <tr><td>Net Quantity</td><td>Set of 4</td></tr>
+      <tr><td>Country of Origin</td><td>India</td></tr>
+      <tr><td>Part Number</td><td>BKR6EIX-11</td></tr>
+      <tr><td>Parts Category</td><td>NGK Spark Plugs</td></tr>
+      <tr><td>MRP</td><td>₹3,520</td></tr>
+    </table>
+
+    <div class="compatibility-section">
+      <h4 style="color: black;">Compatibility</h4>
+      <ul>
+        <li>Honda City 3rd Gen (1998-2003)</li>
+        <li>Honda City 4th Gen & Facelift (2003-2008)</li>
+      </ul>
+    </div>
+  <script src="spare.js"></script>
+</body>
+</html>

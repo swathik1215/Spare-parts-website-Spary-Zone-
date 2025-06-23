@@ -6,34 +6,65 @@
     <title>Document</title>
     <link rel="stylesheet" href="spare.css">
 </head>
-<body class="sqb">
+<body>
+    <div class="innav">
+        <a href="homepage.html">Spary Zone</a>
+        <a href="servicerequest.html">Service Request</a>
+        <a href="car.html">Car Spare</a>
+        <a href="bike.html">Bike Spare</a>
+    </div>
     <div class="formcont">
-        <form action="">
-            <div>
-                <label>Car Brand:</label>
-                <input type="text" placeholder="Enter Your car brand" required class="srf"/>
+        <form onsubmit="sendreq(event)">
+            <div >
+                <label for="" class="srf">Vehicle Type:
+                    <br><br>
+                    <select name="" id="" class="srf">
+                        <option value="">Select Type</option>
+                        <option value="" class="srf">2 Wheeler</option>
+                        <option value="" class="srf">4 Wheeler</option>
+                    </select>
+                </label>
             </div>
             <div>
-                <label>car model:</label>
-                <input type="text" placeholder="Enter Your car model" required class="srf"/>
+                <label>Vehicle Brand:</label>
+                <input type="text" placeholder="Enter Your car brand" id="vb" class="srf"/>
+            </div>
+            <div>
+                <label>vehicle model:</label>
+                <input type="text" placeholder="Enter Your car model" id="vm" class="srf"/>
             </div>
             <div>
                 <label>Make Year:</label>
-                <input type="number" required class="srf"/>
+                <input type="number" id="my" class="srf"/>
             </div>
             <div>
                 <label>Problem:</label>
-                <textarea placeholder="Enter Your Problem" maxlength="100" required class="srf"></textarea>
+                <textarea placeholder="Enter Your Problem" id="pr" class="srf"></textarea>
             </div>
             <div>
                 <label>Service Date:</label>
-                <input type="date" required  class="srf"/>
+                <input type="date" id="sd"  class="srf"/>
             </div>
             <div>
-                <button type="submit" onclick="sendreq()" id="srbtn" class="efbtn">Send Request</button>
+                <button type="submit" id="srbtn" class="efbtn">Send Request</button>
             </div>
         </form>
     </div>
-    <script src="spare.js"></script>
+    <script>
+        function sendreq(event) {
+            event.preventDefault();
+            let brand = document.getElementById("vb").value.trim();
+            let model = document.getElementById("vm").value.trim();
+            let year = document.getElementById("my").value.trim();
+            let prob = document.getElementById("pr").value.trim();
+            let date = document.getElementById("sd").value.trim();
+
+            if (brand === "" || model === "" || year === "" || prob === "" || prob.length > 100 || date === ""){
+                alert("Kindly fill all details");
+            } else {
+                alert("Request submitted successfully, we will contact you soon.");
+            }
+        }
+    </script>
 </body>
 </html>
