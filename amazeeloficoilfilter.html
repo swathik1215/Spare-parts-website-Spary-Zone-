@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amaze Product</title>
+  <link rel="stylesheet" href="spare.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="pinnav">
+    <a href="homepage.html">Spary Zone</a>
+    <a href="servicerequest.html">Service Request</a>
+    <a href="car.html">Car Spare</a>
+    <a href="bike.html">Bike Spare</a>
+    <a href="cart.html" class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-badge" id="cartCount">0</span>
+    </a>
+  </div>
+  <div class="prodcont">
+    <div>
+      <img src="cityeloficoilfilter.webp" alt="oil filter" class="prodimg">
+    </div>
+    <div class="prodalign">
+      <h2 style="color: #22D3EE;">Elofic Oil Filter EK-6393 – Fits Honda Amaze / City (Type 6 & 7) / BR-V / WR-V / Jazz (P)</h2>
+      <p>Fits Honda City, Amaze (N/M), WR-V, Jazz (N/M)</p>
+      <p>Free Shipping || 2-Day Delivery || Limited Offer</p>
+      <div>
+        <input type="search" placeholder="Enter Pincode" class="pin">
+        <button onclick="findplace()" id="findbtn">Find</button>
+      </div>
+      <br>
+      <h1 style="color: #EAB308;">Rs. 212.00</h1> <strike><p>Rs. 287.00</p></strike>
+      <div class="purchase-section">
+      <label for="quantity" style="color: #f9f9f9;">Quantity:</label>
+      <input type="number" id="quantity" value="1" min="1" max="10">
+      <div class="button-group">
+        <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+        <button class="btn btn-success" onclick="buyNow()">Buy Now</button>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="specification-container">
+    <h2 style="color: black;">Product specification:</h2>
+    <table class="spec-table">
+        <tr><td><strong>Weight</strong></td><td>0.3 kg</td></tr>
+        <tr><td><strong>Dimensions (L*B*H)</strong></td><td>9 × 9 × 9 cm</td></tr>
+        <tr><td><strong>Car Make</strong></td><td>Honda</td></tr>
+        <tr><td><strong>Car Model</strong></td><td>Amaze, BR-V, Brio, City, Jazz, Mobilio, WR-V</td></tr>
+        <tr><td><strong>Car Sub Model</strong></td><td>1.5L (D) / Type 7 (IDTEC)</td></tr>
+        <tr><td><strong>Parts Brand</strong></td><td>Elofic</td></tr>
+        <tr><td><strong>Parts Origin</strong></td><td>Aftermarket</td></tr>
+        <tr><td><strong>Net Quantity</strong></td><td>1 Pc.</td></tr>
+        <tr><td><strong>Compatible Part Numbers</strong></td><td>15400RZ0G01</td></tr>
+        <tr><td><strong>Country Of Origin</strong></td><td>India</td></tr>
+        <tr><td><strong>Part Number</strong></td><td>EK-6393</td></tr>
+        <tr><td><strong>Parts Category</strong></td><td>Elofic Oil Filters</td></tr>
+        <tr><td><strong>MRP (Inclusive of All Taxes)</strong></td><td>₹287</td></tr>
+    </table>
+  <div class="compatibility-section">
+    <h2 style="color: black;">Compatibility</h2>
+    <ul>
+        <li>Honda Amaze 2nd Gen | 1.2L | Petrol | 05.2018 – 08.2021</li>
+        <li>Honda BR-V | 1.5L | Petrol | 05.2016 – 04.2020</li>
+        <li>Honda City 6th Gen | 1.5L | Petrol | 01.2014 – 03.2017</li>
+        <li>Honda City 6th Gen Facelift Model | 1.5L | Petrol | 03.2017 – 04.2023</li>
+        <li>Honda Jazz 2nd Gen & Facelift Model | 1.2L | Petrol | 07.2015 – Onwards</li>
+        <li>Honda WR-V | 1.2L | Petrol | 03.2017 – 12.2011</li>
+    </ul>
+  </div>
+  <script src="spare.js"></script>
+</body>
+</html>

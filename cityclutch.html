@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>City Product</title>
+  <link rel="stylesheet" href="spare.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="pinnav">
+    <a href="homepage.html">Spary Zone</a>
+    <a href="servicerequest.html">Service Request</a>
+    <a href="car.html">Car Spare</a>
+    <a href="bike.html">Bike Spare</a>
+    <a href="cart.html" class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-badge" id="cartCount">0</span>
+    </a>
+  </div>
+  <div class="prodcont">
+    <div>
+      <img src="cityclutch.webp" alt="oil filter" class="prodimg">
+    </div>
+    <div class="prodalign">
+      <h2 style="color: #22D3EE;">Exedy Clutch Set (Clutch & Pressure Plate) HC804204 – Fits Honda Amaze / City (Type 7) / Jazz / BR-V / Mobilio / WR-V (Dsl)</h2>
+      <p>Fits Honda City, Brio, Amaze (N/M), WR-V, Jazz (N/M)</p>
+      <p>Free Shipping || 2-Day Delivery || Limited Offer</p>
+      <div>
+        <input type="search" placeholder="Enter Pincode" class="pin">
+        <button onclick="findplace()" id="findbtn">Find</button>
+      </div>
+      <br>
+      <h1 style="color: #EAB308;">Rs. 5,107.00</h1> <strike><p>Rs. 6,153.00</p></strike>
+      <div class="purchase-section">
+      <label for="quantity" style="color: #f9f9f9;">Quantity:</label>
+      <input type="number" id="quantity" value="1" min="1" max="10">
+      <div class="button-group">
+        <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+        <button class="btn btn-success" onclick="buyNow()">Buy Now</button>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="specification-container">
+  <h2 style="color: black;">Product specification:</h2>
+  <table class="spec-table">
+      <tr><td>Weight</td><td>5 kg</td></tr>
+      <tr><td>Dimensions (L*B*H)</td><td>30 × 30 × 7 cm</td></tr>
+      <tr><td>Car Make</td><td>Honda</td></tr>
+      <tr><td>Car Model</td><td>Amaze, BR-V, City, Jazz, Mobilio, WR-V</td></tr>
+      <tr><td>Car Sub Model</td><td>Diesel, 1.5L</td></tr>
+      <tr><td>Parts Brand</td><td>Exedy</td></tr>
+      <tr><td>Parts Origin</td><td>Aftermarket</td></tr>
+      <tr><td>Net Quantity</td><td>Set Of 2 Pcs.</td></tr>
+      <tr><td>Compatible Part Numbers</td><td>22200S9M003, 22300S9M003, 843650</td></tr>
+      <tr><td>Country Of Origin</td><td>Japan</td></tr>
+      <tr><td>Part Number</td><td>HC548044</td></tr>
+      <tr><td>Parts Category</td><td>Exedy Clutch Sets</td></tr>
+      <tr><td>MRP (Inclusive of All Taxes)</td><td>6153</td></tr>
+      <tr><td>Diameter</td><td>222mm</td></tr>
+    </table>
+  <div class="compatibility-section">
+    <h2 style="color: black;">Compatibility</h2>
+    <ul>
+      <li>Honda Amaze 1st Gen & Facelift Model | 1.5L Diesel | 04.2013 – 05.2018</li>
+      <li>Honda BR-V | 1.5L Diesel | 05.2016 – 04.2020</li>
+      <li>Honda Brio | 1.5L Diesel | 01.2011 – 10.2016</li>
+      <li>Honda City 6th Gen & Facelift Model | 1.5L Diesel | 01.2014 – Onwards</li>
+      <li>Honda Jazz 2nd Gen | 1.5L Diesel | 11.2016 – 07.2018</li>
+      <li>Honda Mobilio | 1.5L Diesel | 07.2014 – 06.2017</li>
+      <li>Honda WR-V | 1.5L Diesel | 03.2017 – 06.2020</li>
+    </ul>
+  </div>
+  <script src="spare.js"></script>
+</body>
+</html>

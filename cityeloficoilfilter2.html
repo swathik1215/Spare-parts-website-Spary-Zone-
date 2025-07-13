@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>City Product</title>
+  <link rel="stylesheet" href="spare.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="pinnav">
+    <a href="homepage.html">Spary Zone</a>
+    <a href="servicerequest.html">Service Request</a>
+    <a href="car.html">Car Spare</a>
+    <a href="bike.html">Bike Spare</a>
+    <a href="cart.html" class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-badge" id="cartCount">0</span>
+    </a>
+  </div>
+  <div class="prodcont">
+    <div>
+      <img src="cityeloficoilfilter2.webp" alt="oil filter" class="prodimg">
+    </div>
+    <div class="prodalign">
+      <h2 style="color: #22D3EE;">Elofic Oil Filter EK-6299 – Fits Honda City / Accord / Amaze / BR-V / Brio / Civic / CR-V / Jazz / Mobilio / WR-V (P)</h2>
+      <p>Fits Honda City, Brio, Amaze (N/M), WR-V, Jazz (N/M)</p>
+      <p>Free Shipping || 2-Day Delivery || Limited Offer</p>
+      <div>
+        <input type="search" placeholder="Enter Pincode" class="pin">
+        <button onclick="findplace()" id="findbtn">Find</button>
+      </div>
+      <br>
+      <h1 style="color: #EAB308;">Rs. 196.00</h1> <strike><p>Rs. 265.00</p></strike>
+      <div class="purchase-section">
+      <label for="quantity" style="color: #f9f9f9;">Quantity:</label>
+      <input type="number" id="quantity" value="1" min="1" max="10">
+      <div class="button-group">
+        <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+        <button class="btn btn-success" onclick="buyNow()">Buy Now</button>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="specification-container">
+  <h2 style="color: black;">Product specification:</h2>
+  <table class="spec-table">
+      <tr><td><strong>Weight</strong></td><td>0.3 kg</td></tr>
+      <tr><td><strong>Dimensions (L*B*H)</strong></td><td>9 × 9 × 9 cm</td></tr>
+      <tr><td><strong>Car Make</strong></td><td>Honda</td></tr>
+      <tr><td><strong>Car Model</strong></td><td>Brio, City, Civic, CR-V, Jazz</td></tr>
+      <tr><td><strong>Car Sub Model</strong></td><td>All Petrol Models</td></tr>
+      <tr><td><strong>Parts Brand</strong></td><td>Elofic</td></tr>
+      <tr><td><strong>Parts Origin</strong></td><td>Aftermarket</td></tr>
+      <tr><td><strong>Net Quantity</strong></td><td>1 Pc.</td></tr>
+      <tr><td><strong>Compatible Part Numbers</strong></td><td>15400RAF101</td></tr>
+      <tr><td><strong>Country Of Origin</strong></td><td>India</td></tr>
+      <tr><td><strong>Part Number</strong></td><td>EK-6299</td></tr>
+      <tr><td><strong>Parts Category</strong></td><td>Elofic Oil Filters</td></tr>
+      <tr><td><strong>MRP (Inclusive of All Taxes)</strong></td><td>₹265</td></tr>
+    </table>
+  <div class="compatibility-section">
+    <h2 style="color: black;">Compatibility</h2>
+    <ul>
+      <li>Honda Amaze 1st Gen & Facelift Model | 1.2L | Petrol | 04.2013 – 05.2018</li>
+      <li>Honda City 4th Gen | 1.5L | Petrol | 09.2003 – 10.2006</li>
+      <li>Honda City 4th Gen Facelift & Zx Model | 1.5L | Petrol | 10.2006 – 10.2008</li>
+      <li>Honda City 5th Gen | 1.5L | Petrol | 10.2009 – 12.2011</li>
+      <li>Honda City 5th Gen Facelift Model | 1.5L | Petrol | 01.2012 – 01.2013</li>
+      <li>Honda City 6th Gen | 1.5L | Petrol | 01.2014 – 03.2017</li>
+      <li>Honda City 6th Gen Facelift Model | 1.5L | Petrol | 03.2017 – 04.2023</li>
+      <li>Honda City 7th Gen | 1.5L | Petrol | 06.2020 – Onwards</li>
+      <li>Honda Brio 1st Gen & Facelift Model | 1.2L | Petrol | 01.2011 – 02.2019</li>
+      <li>Honda Jazz 1st & 2nd Gen & Facelift Model | 1.2L | Petrol | 06.2009 – Onwards</li>
+      <li>Honda Mobilio 1st Gen & Facelift Model | 1.5L | Petrol | 07.2014 – 06.2017</li>
+      <li>Honda Civic 7th, 8th & 10th Gen | 1.8L | Petrol | 09.2006 – 12.2020</li>
+      <li>Honda CR-V | 2.0L & 2.4L | Petrol | 01.2013 – 12.2011</li>
+      <li>Honda WR-V | 1.2L | Petrol | 03.2017 – 12.2011</li>
+    </ul>
+  </div>
+  <script src="spare.js"></script>
+</body>
+</html>
